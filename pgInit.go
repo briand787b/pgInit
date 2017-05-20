@@ -96,7 +96,7 @@ func (dbc *DBConfig) Connect() (*sql.DB, error) {
 		dbc.dbName,
 	)
 
-	db, err := sql.Open("mysql", dsn)
+	db, err := sql.Open("postgres", dsn)
 	if err != nil {
 		return nil, err
 	}
